@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%; 
+	 
+}
+h1{color: #000000;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+}
+.grid_container{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 30px
+	"mensaje" 100px
+	"formulario" auto
+	"testimonio" auto
+	"retencion" 100px
+	"footer" 70px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #ffffff;
+}
+
+
+.testimonio{
+	grid-area: testimonio;
+}
+
+
+.formulario{
+	grid-area: formulario;
+}
+
+.mensaje{
+	grid-area: mensaje;
+	background-color: #B81325;
+}
+
+.retencion{
+	grid-area: retencion;
+}
+
+.footer{
+	grid-area: footer;
+	background-color: #B81325;
+}
+
+@media (min-width:50px) 
+{
+	.grid_container{
+		grid-template: 
+		"header      header        header" 	    150px 
+		"mensaje     mensaje       mensaje" 	50px
+		"formulario formulario     formulario"  auto
+		"testimonio  testimonio    testimonio" 0px
+		"retencion  retencion      retencion"  100px
+		"footer     footer         footer"     100px /
+		 100px 		100px          auto;
+ 	}
+.testimonio{display: none;}
+.logo{width: 40%;}
+.emergencia{width: 100%;text-align: center;color: #FFF704;background-color: #2050D6;padding: 1%;position: absolute;top: 8%;right: 0%;z-index: 1;}
+.mySlides{align-content: center; position: absolute;top: 35%;z-index: 0;filter: contrast(50%);width: 100%;}
+.slider{width: 100%;}
+form{border-top-right-radius:40px;border-bottom-left-radius:40px; opacity: 90%;text-align: center;background-color: #EBE9EB;width: 50%;padding: 1%;padding-top: 0.5%;position: absolute;top: 30%;left: 30%;z-index: 3;}
+label{width: 25%;display: inline-block;font-size: 80%;font-weight:bold;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.donar{font-size: 80%;font-weight: bold;color: #FFF704;background-color: #2050D6;border-radius: 35px;font-size: 18px;}
+input {font-size: 80%;color: #000000;background-color:#ffffff; border-radius: 30px;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.g{height: 15px;font-size: 70%;}
+.donativo{color: #000000;background-color: #ffffff;font-weight: bold;border-radius: 35px;padding: 0.5%;padding-left: 2%;padding-right: 2%;}
+.donativo1{font-size: 80%;font-weight: bold;color: #000000;background-color: #ffffff;border-radius: 35px;padding-left: 4%;padding-right: 4%;}
+.donativo:hover{background-color:#000000;color: #ffffff;}
+.donativo1:hover{background-color:#000000;color: #ffffff;}
+.divf {width: 100%;margin-bottom: 2%;}
+form h2{font-size: 110%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;color:#B81325;}
+textarea{border-radius: 30px;}
+.retencion h2{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.retencion img{;position: absolute;bottom: 5%;right:0; filter: grayscale(70%);filter: brightness(30%);}
+.retencion h1{color: #ffffff;position: absolute;bottom: 28%;right:17%;font-size: 100%;}
+.ache21{color: #ffffff;position: absolute;bottom: 18%;right:60%;font-size: 110%;}
+.ache22{color: #ffffff;position: absolute;bottom: 18%;right:10%;font-size: 110%;}
+.a1{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:65%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a2{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:15%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;;}
+.a1:hover{background-color:#B81325;color: #ffffff;}
+.a2:hover{background-color:#B81325;color: #ffffff;}
+p{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.retencion a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.mensaje{border-top-right-radius:0px;border-bottom-left-radius:0px;opacity: 100%;background-color: #B81325;color: #ffffff; padding: 1%; width: 100%; font-size: 100%;position: absolute;right: 0%;top:15% ;z-index: 2;
+}
+.mensaje p{width: 90%;text-align: justify; margin: 5%;}
+footer {position: absolute;bottom: 0%;width: 100%;position: absolute;z-index: 5;height: 8%;}
+.name{color: #ffffff;width:100%;margin-left: 8%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.hola{position: absolute;bottom: -20%;width: 100%;background-color:#B81325;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;position: absolute;bottom: 15%;}
+.redes img {float: right;width: 6%;}
+.redes{width: 100%;margin-left: -40%;}
+.box{width: 100%;padding: 1%;}
+a{color: #ffffff; font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.logoup{width: 5%;margin-left: -95%;position: absolute;bottom: 32%;}
+
+}
+
+@media (min-width: 768px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	   header" 	        100px 
+		".   	    .   	   formulario" 	    250px
+		"mensaje 	mensaje    formulario" 	    300px
+		"testimonio testimonio retencion" 	    auto
+		"footer 	footer 	   footer" 	        150px /
+		 200px 		200px      auto;
+	}
+.testimonio{display: block;}
+.logo{width: 30%;}
+.emergencia{text-align: center;color: #FFF704;background-color: #2050D6;padding: 1%;position: absolute;top: 7%;right: 0%;z-index: 1;}
+.mySlides{align-content: center; position: absolute;top: 10%;z-index: 0;filter: contrast(50%);width: 100%;}
+.slider{width: 100%;}
+form{border-top-right-radius:40px;border-bottom-left-radius:40px; opacity: 90%;text-align: center;background-color: #EBE9EB;width: 40%;padding: 1%;padding-top: 0.5%;position: absolute;top: 18%;left: 50%;z-index: 3;}
+label{width: 25%;display: inline-block;font-size: 80%;font-weight:bold;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.donar{font-size: 80%;font-weight: bold;color: #FFF704;background-color: #2050D6;border-radius: 35px;font-size: 18px;}
+input {font-size: 80%;color: #000000;background-color:#ffffff; border-radius: 30px;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;margin-bottom: 5%;}
+.g{height: 15px;font-size: 70%;margin-bottom: 5%;}
+.donativo{color: #000000;background-color: #ffffff;font-weight: bold;border-radius: 35px;padding: 0.5%;padding-left: 2%;padding-right: 2%;margin-bottom: 2%;}
+.donativo1{font-size: 80%;font-weight: bold;color: #000000;background-color: #ffffff;border-radius: 35px;padding-left: 4%;padding-right: 4%;margin-bottom: 2%;}
+.donativo:hover{background-color:#000000;color: #ffffff;margin-bottom: 5%;}
+.donativo1:hover{background-color:#000000;color: #ffffff;margin-bottom: 5%;}
+.divf {width: 100%;margin-bottom: 2%;margin-bottom: 2%;}
+form h2{font-size: 110%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;color:#B81325;margin-bottom: 5%;}
+textarea{border-radius: 30px;}
+.retencion h2{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.retencion img{;position: absolute;bottom: 5%;right:0; filter: grayscale(70%);filter: brightness(30%);}
+.retencion h1{color: #ffffff;position: absolute;bottom: 28%;right:17%;font-size: 100%;}
+.ache21{color: #ffffff;position: absolute;bottom: 18%;right:35%;font-size: 110%;}
+.ache22{color: #ffffff;position: absolute;bottom: 18%;right:10%;font-size: 110%;}
+.a1{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:30%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a2{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:15%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;;}
+.a1:hover{background-color:#B81325;color: #ffffff;}
+.a2:hover{background-color:#B81325;color: #ffffff;}
+p{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.retencion a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.testimonio{width: 100%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
+}
+.testimonio img{margin-right: 1%;width: 22%;border-top-right-radius:40px;border-top-left-radius:40px
+}
+.mensaje{border-top-right-radius:0px;border-bottom-left-radius:0px;opacity: 100%;background-color: #B81325;color: #ffffff; padding: 3%; width: 100%; font-size: 120%;position: absolute;right: 0%;top:50% ;z-index: 2;
+}
+.mensaje p{width: 50%;text-align: justify;}
+footer {position: absolute;bottom: 0%;width: 100%;position: absolute;z-index: 5;height: 8%;}
+.name{color: #ffffff;width:100%;margin-left: 8%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.hola{position: absolute;bottom: -20%;width: 100%;background-color:#B81325;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;position: absolute;bottom: 15%;}
+.redes img {float: right;width: 6%;}
+.redes{width: 100%;margin-left: -40%;}
+.box{width: 100%;padding: 1%;}
+a{color: #ffffff; font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.logoup{width: 8%;margin-left: -95%;position: absolute;bottom: 32%;}
+ 
+@media (min-width: 900px) {
+		.grid_container{
+		grid-template: 
+		"header 	header 	    header     header" 	        100px 
+		".   	    .           mensaje    formulario" 	    auto
+		"testimonio testimonio  retencion  formulario" 	    auto
+		"footer 	footer      footer	   footer" 	        40px /
+		 200px   	200px       200px      auto
+	}
+.testimonio{display: block;}
+.logo{width: 25%;}
+.emergencia{width: 70%;text-align: center;color: #FFF704;background-color: #2050D6;padding: 1%;position: absolute;top: 9%;right: 0%;z-index: 1;}
+.mySlides{align-content: center; position: absolute;top: 20%;z-index: 0;filter: contrast(50%);width: 70%;}
+.slider{width: 70%;}
+form{border-top-right-radius:40px;border-bottom-left-radius:40px; opacity: 90%;text-align: center;background-color: #EBE9EB;width: 20%;padding: 1%;padding-top: 0.5%;position: absolute;top: 18%;left: 70%;z-index: 3;}
+label{width: 25%;display: inline-block;font-size: 80%;font-weight:bold;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.donar{font-size: 80%;font-weight: bold;color: #FFF704;background-color: #2050D6;border-radius: 35px;font-size: 18px;}
+input {font-size: 80%;color: #000000;background-color:#ffffff; border-radius: 30px;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.g{height: 15px;font-size: 70%;}
+.donativo{color: #000000;background-color: #ffffff;font-weight: bold;border-radius: 35px;padding: 0.5%;padding-left: 2%;padding-right: 2%;}
+.donativo1{font-size: 80%;font-weight: bold;color: #000000;background-color: #ffffff;border-radius: 35px;padding-left: 4%;padding-right: 4%;}
+.donativo:hover{background-color:#000000;color: #ffffff;}
+.donativo1:hover{background-color:#000000;color: #ffffff;}
+.divf {width: 100%;margin-bottom: 2%;}
+form h2{font-size: 110%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;color:#B81325;}
+textarea{border-radius: 30px;}
+.textex{display: flex;flex-flow: wrap;}
+.retencion h2{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.retencion img{position: absolute;bottom: 5%;right:28%; filter: grayscale(70%);filter: brightness(30%);}
+.retencion h1{color: #ffffff;position: absolute;bottom: 28%;right:31%;font-size: 100%;}
+.ache21{color: #ffffff;position: absolute;bottom: 18%;right:42%;font-size: 110%;}
+.ache22{color: #ffffff;position: absolute;bottom: 18%;right:31%;font-size: 110%;}
+.a1{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:45%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a2{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:32.5%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;;}
+.a1:hover{background-color:#B81325;color: #ffffff;}
+.a2:hover{background-color:#B81325;color: #ffffff;}
+p{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.retencion a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.testimonio{width: 100%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
+}
+.testimonio img{margin-right: 1%;width: 20%;border-top-right-radius:40px;border-top-left-radius:40px
+}
+.mensaje{border-top-right-radius:40px;border-bottom-left-radius:40px;opacity: 80%;background-color: #B81325;color: #ffffff; padding: 1%; width: 60%; font-size: 130%;position: absolute;right: 0%;top:30% ;z-index: 2;
+}
+.mensaje p{width: 50%;text-align: justify;}
+footer {position: absolute;bottom: 0%;width: 100%;position: absolute;z-index: 3;height: 8%;}
+.name{color: #ffffff;width:100%;margin-left: 8%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.hola{position: absolute;bottom: 22%;width: 50%;right: -10%;background: none;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;position: absolute;bottom: 15%;}
+.redes img {float: right;width: 4%;}
+.redes{width: 100%}
+.box{width: 100%;;padding: 1%;position: absolute;bottom: 15%;}
+a{color: #ffffff; font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.logoup{width: 2%;margin-left: 5%;position: absolute;bottom: 32%;}
+}
+
+
+@media (min-width: 1200px) {
+
+	.grid_container{
+		grid-template: 
+		"header 	header 	    header     header" 	        120px 
+		".          .           mensaje    formulario" 	    auto
+		"testimonio testimonio  retencion  formulario" 	    auto
+		"footer 	footer      footer	   footer" 	        100px /
+		 200px   	200px       auto       350px
+	}
+.testimonio{display: block;}
+.logo{width: 15%;}
+.emergencia{width: 45%;text-align: center;color: #FFF704;background-color: #2050D6;padding: 1%;position: absolute;top: 10%;right: 0%;z-index: 1;}
+.mySlides{align-content: center; position: absolute;top: 14%;z-index:0;filter: contrast(50%);width: 70%;}
+.slider{width: 70%;}
+form{border-top-right-radius:40px;border-bottom-left-radius:40px; opacity: 90%;text-align: center;background-color: #EBE9EB;width: 20%;padding: 1%;padding-top: 1%;position: absolute;top: 20%;left: 70%;z-index: 3;}
+label{width: 25%;display: inline-block;font-size: 80%;font-weight:bold;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.donar{font-size: 80%;font-weight: bold;color: #FFF704;background-color: #2050D6;border-radius: 35px;font-size: 18px;padding: 1%;}
+input {font-size: 80%;color: #000000;background-color:#ffffff; border-radius: 30px;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.g{height: 15px;font-size: 70%;}
+.donativo{color: #000000;background-color: #ffffff;font-weight: bold;border-radius: 35px;padding: 0.5%;padding-left: 2%;padding-right: 2%;}
+.donativo1{font-size: 80%;font-weight: bold;color: #000000;background-color: #ffffff;border-radius: 35px;padding-left: 4%;padding-right: 4%;}
+.donativo:hover{background-color:#000000;color: #ffffff;}
+.donativo1:hover{background-color:#000000;color: #ffffff;}
+.divf {width: 100%;margin-bottom: 2%;}
+form h2{font-size: 110%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;color:#B81325;}
+textarea{border-radius: 30px;}
+.textex{display: flex;flex-flow: wrap;}
+.retencion h2{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.retencion img{position: absolute;bottom: 5%;right:28%; filter: grayscale(70%);filter: brightness(30%);}
+.retencion h1{color: #ffffff;position: absolute;bottom: 28%;right:31%;font-size: 100%;}
+.ache21{color: #ffffff;position: absolute;bottom: 18%;right:42%;font-size: 110%;}
+.ache22{color: #ffffff;position: absolute;bottom: 18%;right:31%;font-size: 110%;}
+.a1{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:45%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;}
+.a2{font-size: 80%;color: #000000;position: absolute;bottom: 15%;right:32.5%;border-radius: 35px;background-color: #ffffff;padding-left: 1%; padding-right: 1%;;}
+.a1:hover{background-color:#B81325;color: #ffffff;}
+.a2:hover{background-color:#B81325;color: #ffffff;}
+p{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.retencion a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;}
+.testimonio{width: 100%;position: absolute;right:0%;z-index: 2;bottom: 7.5%;
+}
+.testimonio img{margin-right: 1%;width: 20%;border-top-right-radius:40px;border-top-left-radius:40px
+}
+.mensaje{border-top-right-radius:40px;border-bottom-left-radius:40px;opacity: 80%;background-color: #B81325;color: #ffffff; padding: 1%; width: 60%; font-size: 130%;position: absolute;right: 0%;top:30% ;z-index: 2;
+}
+.mensaje p{width: 50%;text-align: justify;}
+footer {position: absolute;bottom: 0%;width: 100%;position: absolute;z-index: 5;height: 8%;}
+.name{color: #ffffff;width:50%;margin-left: 12%;font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.hola{position: absolute;bottom: 22%;width: 40%;right: 0%;background: none;}
+.name a{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif; font-weight: bold;position: absolute;bottom: 15%;}
+.redes img {float: right;width: 4%;}
+.redes{width: 100%}
+.box{width: 70%;;padding: 1%;position: absolute;bottom: 12%;}
+a{color: #ffffff; font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.logoup{width: 2%;margin-left: 9%;position: absolute;bottom: 32%;}
+}
+.grid_container2{
+	display: grid;
+	gap: 5px;
+	grid-template: 
+	"header" 30px
+	"quienes" 100px
+	"que" auto
+	"proyectos" auto
+	"tipografia" 100px
+	"colores" 100px
+	"wiref" 100px
+	"footer" 70px
+	;
+}
+h1,h2{font-family: 'Josefin Sans', sans-serif;
+font-family: 'Palette Mosaic', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Titillium Web', sans-serif;}
+.quienes,.proyectos,.colores,.wiref{background-color:#B81325; color: #ffffff; padding: 2%;margin: 2%;
+}
+.que,.tipografia,.colores{background-color:#EBE9EB; color: #000000; padding: 2%;margin: 2%; align-content: center;
+}
+.tipografia img{width: 100%;
+}
+.proyectos,.wiref,.colores{display: flex;flex-flow: wrap;
+}
+.proyectos div{padding: 1%;width: 20%;margin: 2%;margin-top: 5%;
+}
+.wiref div{margin: 2%;align-content: center;
+}
+.wiref img{width:auto;height: 180px;}
+.wiref p{font-size: 60%;}
+.wiref article{width: 100%;display: flex;flex-flow: wrap;}
+.colores div{width: 10%;height: 150px ;margin-top: 5%;}
+.gris{background-color:#EBE9EB;}
+.rojo{background-color:#B81325;}
+.azul{background-color:#FFF704;}
+.amarillo{background-color:#2050D6;}
+.negro{background-color:#000000 ;}
+.blanco{background-color:#ffffff ;}
+.header{
+	grid-area: header;
+	background-color: #ffffff;
+}
+.grid_container2 footer{position: relative;top: 95%;height: 150%;} 
+
+.quienes{
+	grid-area: quienes;
+}
+
+
+.que{
+	grid-area: que;
+}
+
+.proyectos{
+	grid-area: proyectos;
+	background-color: #B81325;
+}
+
+.tipografia{
+	grid-area: tipografia;
+}
+
+.colores{
+	grid-area: colores;
+}
+.wiref{
+	grid-area: wiref;
+}
+.footer{
+	grid-area: footer;;
+}
+@media (max-width: 900px) {
+.grid_container2 header{height: 200%;} 
