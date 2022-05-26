@@ -294,9 +294,9 @@ font-family: 'Titillium Web', sans-serif; font-weight: bold;}
 font-family: 'Palette Mosaic', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Titillium Web', sans-serif; font-weight: bold;}
-.testimonio{width:20%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
+.testimonio{width:100%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
 }
-.testimonio img{margin-right: 1%;width:100%;border-top-right-radius:40px;border-top-left-radius:40px
+.testimonio img{margin-right: 1%;width:20%;border-top-right-radius:40px;border-top-left-radius:40px
 }
 .mensaje{border-top-right-radius:40px;border-bottom-left-radius:40px;opacity: 80%;background-color: #B81325;color: #ffffff; padding: 1%; width: 60%; font-size: 130%;position: absolute;right: 0%;top:30% ;z-index: 2;
 }
@@ -383,9 +383,9 @@ font-family: 'Titillium Web', sans-serif; font-weight: bold;}
 font-family: 'Palette Mosaic', cursive;
 font-family: 'Source Sans Pro', sans-serif;
 font-family: 'Titillium Web', sans-serif; font-weight: bold;}
-.testimonio{width:20%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
+.testimonio{width:100%;position: absolute;right: 0%;z-index: 2;bottom: 7.5%;
 }
-.testimonio img{margin-right: 1%;width:100%;border-top-right-radius:40px;border-top-left-radius:40px
+.testimonio img{margin-right: 1%;width:20%;border-top-right-radius:40px;border-top-left-radius:40px
 }
 .mensaje{border-top-right-radius:40px;border-bottom-left-radius:40px;opacity: 80%;background-color: #B81325;color: #ffffff; padding: 1%; width: 60%; font-size: 130%;position: absolute;right: 0%;top:30% ;z-index: 2;
 }
